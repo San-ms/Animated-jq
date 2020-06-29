@@ -1,0 +1,54 @@
+body {
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.5;
+
+	background-color: #ffffff;
+	color: #333333;
+	margin: 40px auto 40px auto;
+	max-width: 620px;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px 30px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+nav {
+  margin: 5px 0 0 0;
+}
+
+nav a {
+  color: #2727e6;
+  margin: 0 10px 0 0;
+  text-decoration:  none;
+}
+
+nav a.active {
+  font-weight:  700;
+}
+
+section {
+  padding:  30px 30px;
+  background-color: #eeeeee;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+section p {
+  margin: 0 0 20px 0;
+}
+
+section p:last-child {
+  margin: 0;
+}
