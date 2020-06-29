@@ -15,7 +15,13 @@ $(this).addClass("active")
 $.ajax({
   url:href,
   success: function (data) {
-    $("section").fadeOut(250)
+    $("section").fadeOut(250, function () {
+
+
+
+
+    $("section").fadeIn(250)  
+    })
   }
 })
 
