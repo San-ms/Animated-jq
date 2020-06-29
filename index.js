@@ -1,31 +1,29 @@
 // alert ("Hello")
 
-$("nav a").on("click", function (event) {
-// detener que pase algo por default
-event.preventDefault()
+$("nav a").on("click", function(event) {
+  // detener que pase algo por default
+  event.preventDefault()
 
-var href = $(this).attr("href")
+  var href = $(this).attr("href")
 
-window.history.pushState(null, href)
+  window.history.pushState(null, href)
 
-$("nav a").removeClass("active")
+  $("nav a").removeClass("active")
 
-$(this).addClass("active")
+  $(this).addClass("active")
 
-$.ajax({
-  url:href,
-  success: function (data) {
-    $("section").fadeOut(250, function () {
-      const newPage = $(data).filter("section").html()
+  $.ajax({
+    url: href,
+    success: function(data) {
+      $("section").fadeOut(250, function() {
+        const newPage = $(data).filter("section").html()
 
-      $("section").html(newPage)
+        $("section").html(newPage)
 
-
-
-    $("section").fadeIn(250)
-    })
-  }
-})
+        $("section").fadeIn(250)
+      })
+    }
+  })
 
 
 
